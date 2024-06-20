@@ -2,8 +2,20 @@ import "remixicon/fonts/remixicon.css";
 import "./Demo.css";
 import images from "../../assets/images";
 import { useEffect, useState } from "react";
+import CalendlyPage from "../ScheduleDemo/ScheduleDemo";
+import { useNavigate } from "react-router-dom";
 
 const Demo = () => {
+
+
+  // const [showCalendly, setShowCalendly] = useState(false);
+  const navigate=useNavigate()
+
+  // const handleCalendlyClick = () => {
+  //   console.log("hhhhhhhhhhhhhhh");
+  //   setShowCalendly(true);
+    
+  // };
 
   const [formData,setFormData]=useState({
 
@@ -44,6 +56,7 @@ const Demo = () => {
   const handleSubmit=async(event)=>{
 
     event.preventDefault()
+    navigate('/schedule-demo');
 
   }
 
@@ -218,26 +231,16 @@ const Demo = () => {
                 </div>
               </div>
               <p>The contact information is necessary to communicate with you regarding our products and services. You may unsubscribe from these communications at any time.  You can review our <span><a className="text-blue-900 underline" href="">Terms of service</a></span> and our <span><a className="text-blue-900 underline" href=""> Privacy Policy</a> </span> .</p>
-              <button type="submit" className="bg-xobin_blue py-2 my-5 rounded-md mx-auto md:ml-0 text-white w-[max(10vw,250px)]">
-                {/* <button type="button" className="btn-calendly" onClick={handleCalendlyClick}> */}
+              <button type="submit"  className="bg-xobin_blue py-2 my-5 rounded-md mx-auto md:ml-0 text-white w-[max(10vw,250px)]">
                  Check Available Slot For Live Demo
               </button>
             </form>
           </div>
         </div>
       </div>
-      {/* 
-      {showCalendly && (
-        <div className="calendly-popup fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
-          <div className="calendly-widget bg-white p-5 rounded-lg relative">
-            <button onClick={() => setShowCalendly(false)} className="close-button absolute top-2 right-2 text-black">
-              &times;
-            </button>
-            <InlineWidget url="https://calendly.com/your-username/event-type" />
-          </div>
-        </div>
-      )} */}
-    </section>
+      
+      {/* {showCalendly && <CalendlyPage setShowCalendly={setShowCalendly} />}     */}
+      </section>
   );
 };
 
