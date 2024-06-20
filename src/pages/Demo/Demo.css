@@ -1,0 +1,21 @@
+.contact-form input, select{
+    background-color: #f5f8fa;
+    border: 1px solid #cbd6e2;
+    border-radius: 5px;
+    padding: 5px 15px;
+    outline: none;
+}
+
+.demo{
+    background-image: url(https://xobin.com/wp-content/uploads/2021/12/req_demo_bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+}
+
+/* @media (max-width:1050px) {
+    .contact-form input, select{
+        padding: 5px 15px;
+    }
+} */

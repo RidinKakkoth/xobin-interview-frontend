@@ -7,7 +7,7 @@ const Navbar = () => {
     const [menu, setMenu] = useState("Products");
 
     return (
-        <div className='w-full flex flex-col items-center md:pb-5'>
+        <div className='w-full flex  bg-white  flex-col items-center md:pb-5'>
             <nav className='navbar w-[80%] py-5 px-0 flex justify-between items-center'>
                 <Link to='/'>
                     <img src={images.logo} alt="logo" className="logo w-[150px]" />

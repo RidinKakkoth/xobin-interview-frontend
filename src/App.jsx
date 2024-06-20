@@ -1,6 +1,8 @@
 import { Route, Routes } from "react-router-dom"
 import Navbar from "./components/Navbar/Navbar"
-import Home from "./pages/Home"
+import Home from "./pages/Home/Home"
+import Demo from "./pages/Demo/Demo"
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 // import Footer from "./components/Footer/Footer"
 // import { useState } from "react"
@@ -16,8 +18,9 @@ const App = () => {
     <div className="app">
       {/* <Navbar setShowLogin={setShowLogin} /> */}
       <Navbar  />
-      <Routes>
+      <Routes >
       <Route path="/" element={<Home/>} />
+      <Route path="/request-demo" element={<Demo/>} />
       </Routes>
     </div>
     {/* <Footer/> */}
