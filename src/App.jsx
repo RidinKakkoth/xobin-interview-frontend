@@ -6,28 +6,22 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import CalendlyPage from "./pages/ScheduleDemo/ScheduleDemo";
 import Footer from "./components/Footer/Footer";
 
-// import Footer from "./components/Footer/Footer"
-// import { useState } from "react"
-// import LoginPopup from "./components/LoginPopup/LoginPopup"
-
 const App = () => {
 
-  // const[showLogin,setShowLogin]=useState(false)
 
   return (
     <>
-    {/* {showLogin?<LoginPopup  setShowLogin={setShowLogin}/>:<></>} */}
     <div className="app">
-      {/* <Navbar setShowLogin={setShowLogin} /> */}
       <Navbar  />
+      <div className="pt-28">
       <Routes >
       <Route path="/" element={<Home/>} />
       <Route path="/request-demo" element={<Demo/>} />
       <Route path="/schedule-demo" element={<CalendlyPage/>} />
       </Routes>
+      </div>
       <Footer/>
     </div>
-    {/* <Footer/> */}
     </>
   )
 }

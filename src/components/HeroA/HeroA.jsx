@@ -1,15 +1,19 @@
+import { useNavigate } from "react-router-dom";
 import images from "../../assets/images";
 
 const HeroA = () => {
+  
+  const navigate=useNavigate()
+
   return (
     <section>
       <div className="bg-gray-100 h-auto rounded-3xl mt-20 mx-auto py-10  max-w-[1300px] ">
-        <h1 className="text-3xl md:text-4xl font-semibold   px-16 ">
+        <h1 className="text-3xl text-[#3C403D]  md:text-4xl font-semibold   px-16 ">
           What’s an Automated Video Interview ?
         </h1>
         <div className="flex flex-col lg:flex-row">
           <div className="left w-full lg:w-[60%] px-16 py-5 h-auto">
-            <p className="text-xl max-w-[90%]">
+            <p className="text-[#565656] text-xl max-w-[90%]">
               An Automated Video Interview(AVI), also known as an on-demand
               video interview, is a method of interviewing where a candidate
               responds to a series of preset screening questions via video
@@ -24,7 +28,7 @@ const HeroA = () => {
               traditional phone interview. But 20X faster and more convenient.
             </p>
             <div className="flex gap-5 mt-8">
-              <button className="bg-xobin_blue  text-white px-6 py-2 rounded-md">
+              <button onClick={()=>navigate('/request-demo')} className="bg-xobin_blue  text-white px-6 py-2 rounded-md">
                 Request Demo
               </button>
               <button className="bg-white  text-xobin_blue border border-xobin_blue px-6 py-2 rounded-md">

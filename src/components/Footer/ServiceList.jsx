@@ -8,7 +8,7 @@ const ServiceList = ({title,service}) => {
             service.map((item,index)=>(
 
                 <ul key={index}>
-                    <li className="cursor-pointer text-[17px] text-[#565656]">{item}</li>
+                    <li className="cursor-pointer  text-[#565656]">{item}</li>
                 </ul>
             ))
         }

@@ -13,7 +13,7 @@ const Footer = () => {
         "Careers Hiring!"
     ]
     const products=[
-        "Pre-employment Testing Software",
+        "Pre-employment Testing ",
         "Skill Assessment Software",
         "Video Interviews Software",
         "Campus Recruitment Software",
@@ -48,7 +48,7 @@ const resources=[
 
 
   return (
-    <footer className="bg-[#F7F8EF] pt-10">
+    <footer className="bg-[#F7F8EF] pt-10 mt-10">
       <div className=" grid grid-cols-3 gap-6 lg:gap-0 lg:grid-cols-5 mx-auto text-center lg:text-left lg:max-w-[1300px] h-auto  ">
         <ServiceList title={"COMPANY"} service={company} />
         <ServiceList title={"PRODUCTS"} service={products} />

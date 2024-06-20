@@ -1,11 +1,13 @@
-import images from "../../assets/images";
+import { useNavigate } from "react-router-dom";
 import heroData from "../../assets/heroData";
 
 const HeroB = () => {
+
+  const navigate=useNavigate()
   return (
     <section>
       <div className="py-10 w-full max-w-[1300px] flex flex-col items-center justify-center mx-auto h-auto">
-        <h1 className="py-10  text-3xl font-semibold">
+        <h1 className="text-[#333333] py-10  text-[32px] font-bold">
           Why Xobin for Automated Video Interview ?
         </h1>
 
@@ -13,8 +15,8 @@ const HeroB = () => {
         <>
          <div key={index} style={{backgroundImage:`${item.backround}`}} className="flex h-auto w-full mb-10 rounded-[40px] p-14">
           <div className="md:w-[50%]  h-auto flex flex-col gap-5 ">
-            <h1 className="text-4xl font-semibold">{item.title}</h1>
-            <p className="text-xl text-bluegrey">
+            <h1 className="text-[#333333] text-4xl font-semibold">{item.title}</h1>
+            <p className="text-xl text-[#565656]">
               {item.description}
             </p>
             <div className="flex  text-bluegrey text-lg">
@@ -43,7 +45,9 @@ const HeroB = () => {
                     color: item.color,
                     borderWidth: '1px',
                     borderStyle: 'solid'
-                  }}  className="bg-white   px-6 py-2 rounded-md">
+                  }}
+                  onClick={()=>navigate('/request-demo')}
+                  className="bg-white   px-6 py-2 rounded-md">
               Request Demo
               </button>
             </div>

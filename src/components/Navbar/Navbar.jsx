@@ -7,12 +7,12 @@ const Navbar = () => {
     const [menu, setMenu] = useState("Products");
 
     return (
-        <div className='w-full flex  bg-white  flex-col items-center md:pb-5'>
+        <div className='fixed w-full flex  bg-white  flex-col items-center md:pb-5'>
             <nav className='navbar w-[80%] py-5 px-0 flex justify-between items-center'>
                 <Link to='/'>
                     <img src={images.logo} alt="logo" className="logo w-[150px]" />
                 </Link>
-                <ul id='navbar-menu' className="flex list-none gap-[40px] text-bluegrey text-[18px]">
+                <ul id='navbar-menu' className="flex list-none gap-[40px] text-bluegrey text-[17px] font-medium">
                     <li>
                         <Link to='/' onClick={() => setMenu("Products")} className={menu === "Products" ? "active" : ""}>Products</Link>
                     </li>
@@ -30,8 +30,8 @@ const Navbar = () => {
                     </li>
                 </ul>
                 <div id='navbar-right' className="flex items-center gap-10">
-                    <a className='text-bluegrey hidden lg:block text-lg'>Get Started</a>
-                    <button className='text-lg text-white bg-xobin_blue rounded-[4px] px-[30px] py-[10px] cursor-pointer'>Sign In</button>
+                    <a className='text-bluegrey hidden lg:block text-[17px] font-medium'>Get Started</a>
+                    <button className='text-lg text-white bg-xobin_blue rounded-[4px] px-[30px] py-[10px] font-medium cursor-pointer'>Sign In</button>
                 </div>
             </nav>
         </div>
