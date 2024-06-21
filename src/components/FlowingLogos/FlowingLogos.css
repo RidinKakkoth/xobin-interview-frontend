@@ -1,0 +1,41 @@
+
+
+   .flowing-logos {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    
+  }
+  
+  .logos-layer {
+    display: flex;
+    justify-self: start;
+    animation: flowLeft 60s linear infinite;
+  }
+  
+  .logos {
+    height: auto;
+    padding: 20px;
+    margin: 0 20px;
+    box-shadow: 0 6px 10px rgb(22 30 36 / 8%);
+    border-radius: 10px;
+    background-color: white;
+  }
+  
+  .logos-layer:nth-child(2) {
+    animation-delay: 60s;
+    display: flex;
+    justify-self: start;
+    animation: flowLeft 60s linear infinite;
+  }
+  
+  @keyframes flowLeft {
+    100% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

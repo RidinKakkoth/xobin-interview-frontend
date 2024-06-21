@@ -7,8 +7,13 @@ const images={
     iso:"https://res.cloudinary.com/ddymh3cnk/image/upload/v1718900477/xobin%20interview/ISO27001_rgb_180_s67vth.png",
     gdpr:"https://res.cloudinary.com/ddymh3cnk/image/upload/v1718900476/xobin%20interview/gdpr_xu8whs.png",
     capterra:"https://res.cloudinary.com/ddymh3cnk/image/upload/v1718900476/xobin%20interview/Capterra-rating_p0c5wl.png",
-    g2:"https://res.cloudinary.com/ddymh3cnk/image/upload/v1718900476/xobin%20interview/G2-rating_bntkzf.png"
+    g2:"https://res.cloudinary.com/ddymh3cnk/image/upload/v1718900476/xobin%20interview/G2-rating_bntkzf.png",
+    traditional:"https://res.cloudinary.com/ddymh3cnk/image/upload/v1718941065/xobin%20interview/Traditional_phone_hiring_xkebd5.png"
     
 }
 
 export default images
+
+
+ 
+  

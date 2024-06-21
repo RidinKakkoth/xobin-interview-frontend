@@ -1,0 +1,11 @@
+.dropdown-menu {
+  display: block;
+}
+
+span:hover {
+  color: #0075ff;
+}
+
+h3 {
+  margin-bottom: 5px;
+}

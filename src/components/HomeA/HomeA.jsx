@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import images from "../../assets/images";
 
-const HeroA = () => {
+const HomeA = () => {
   
   const navigate=useNavigate()
 
@@ -49,4 +49,4 @@ const HeroA = () => {
   );
 };
 
-export default HeroA;
+export default HomeA;

@@ -1,19 +1,24 @@
+import FlowingLogos from '../../components/FlowingLogos/FlowingLogos'
 import Header from '../../components/Header/Header'
-import HeroA from '../../components/HeroA/HeroA'
-import HeroB from '../../components/HeroB/HeroB'
-import HeroC from '../../components/HeroC/HeroC'
-import './Home.css'
+import HomeA from '../../components/HomeA/HomeA'
+import HomeB from '../../components/HomeB/HomeB'
+import HomeC from '../../components/HomeC/HomeC'
+import HomeD from '../../components/HomeD/HomeD'
+import HomeE from '../../components/HomeE/HomeE'
+import HomeF from '../../components/HomeF/HomeF'
+
 
 const Home = () => {
-
-
-
   return (
     <div>
         <Header/>
-        <HeroA/>
-        <HeroB/>
-        <HeroC/>
+        <FlowingLogos/>
+        <HomeA/>
+        <HomeB/>
+        <HomeC/>
+        <HomeD/>
+        <HomeE/>
+        <HomeF/>
     </div>
   )
 }

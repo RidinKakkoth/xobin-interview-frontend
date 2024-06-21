@@ -10,6 +10,9 @@ export default {
         bluegrey: '#49557e', 
         xobin_blue:"#0075FF"
       },
+      boxShadow: {
+        'custom': '0 16px 120px rgb(22 30 36 / 8%)',
+      },
     },
     
   },

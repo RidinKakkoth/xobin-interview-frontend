@@ -45,3 +45,29 @@
         display: none;
     }
 }
+
+
+.navbar li.relative {
+    position: relative;
+  }
+  
+  .navbar li.relative .dropdown-menu {
+    left: 50%;
+    transform: translateX(-50%) rotateX(-90deg);
+    top: 100%;
+    margin-top: 10px;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: top;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  
+  .navbar li.relative:hover .dropdown-menu {
+    transform: translateX(-30%) rotateX(0deg);
+    opacity: 1;
+    visibility: visible;
+  }
+   
+
+
